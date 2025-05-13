@@ -16,6 +16,7 @@ h1 {
     color: white;
     height: 5rem;
     line-height: 5rem;
+    margin-bottom: 2rem;
 }
 
 .choice {
@@ -26,19 +27,33 @@ h1 {
     justify-content: center;
     align-items: center;
     background-color: #eaeaea;
-    transition: background-color 0.3s;
+    border: 3px solid #333;
+    transition: all 0.3s;
+    position: relative;
+    cursor: pointer;
+}
+
+.choice:hover {
+    background-color: #d0d0d0;
+    transform: scale(1.05);
+}
+
+.choice:active {
+    background-color: #aaa;
+    transform: scale(0.95);
+}
+
+.choice img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    pointer-events: none;
 }
 
 .choice:hover {
     cursor: pointer;
     background-color: #333;
-}
-
-img {
-    height: 150px;
-    width: 150px;
-    object-fit: cover;
-    border-radius: 50%;
+    color: white;
 }
 
 .choices {
@@ -55,10 +70,6 @@ img {
     margin-top: 20px;
 }
 
-.msg-container {
-    margin-top: 5rem;
-}
-
 #msg {
     background-color: #081b31;
     color: #fff;
@@ -66,8 +77,41 @@ img {
     padding: 1rem;
     border-radius: 1rem;
     display: inline-block;
+    margin-top: 2rem;
+    min-height: 4rem;
 }
 
 .scoreboard {
     margin-top: 2rem;
+}
+
+.win {
+    background-color: #2ecc71;
+}
+
+.lose {
+    background-color: #e74c3c;
+}
+
+.draw {
+    background-color: #3498db;
+}
+
+.computer-choice {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.computer-choice span {
+    display: inline-flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.comp-choice-img {
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+    vertical-align: middle;
 }
