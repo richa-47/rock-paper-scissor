@@ -2,10 +2,17 @@
     margin: 0;
     padding: 0;
     text-align: center;
+    box-sizing: border-box;
 }
 
-h1{
-    background-color:black;
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+h1 {
+    background-color: #000;
     color: white;
     height: 5rem;
     line-height: 5rem;
@@ -18,16 +25,18 @@ h1{
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #eaeaea;
+    transition: background-color 0.3s;
 }
 
 .choice:hover {
     cursor: pointer;
-    background-color: black;
+    background-color: #333;
 }
 
 img {
     height: 150px;
-    width: 150;
+    width: 150px;
     object-fit: cover;
     border-radius: 50%;
 }
@@ -41,9 +50,9 @@ img {
     gap: 5rem;
 }
 
-#user-score,
-#comp-score {
+#user-score, #comp-score {
     font-size: 4rem;
+    margin-top: 20px;
 }
 
 .msg-container {
@@ -54,7 +63,11 @@ img {
     background-color: #081b31;
     color: #fff;
     font-size: 2rem;
-    display: inline;
     padding: 1rem;
     border-radius: 1rem;
+    display: inline-block;
+}
+
+.scoreboard {
+    margin-top: 2rem;
 }
