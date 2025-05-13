@@ -14,8 +14,8 @@ const genCompChoice = () => {
 };
 
 const drawGame = () => {
-    msg.innerText = "Game was Draw. Play again.";
-    msg.className = "black";
+    msg.innerText = "It's a Draw! Play again.";
+    msg.className = "draw";
 };
 
 const showWinner = (userWin, userChoice, compChoice) => {
@@ -23,12 +23,12 @@ const showWinner = (userWin, userChoice, compChoice) => {
         userScore++;
         userScorePara.innerText = userScore;
         msg.innerText = `You win! Your ${userChoice} beats ${compChoice}`;
-        msg.className = "green";
+        msg.className = "win";
     } else {
         compScore++;
         compScorePara.innerText = compScore;
-        msg.innerText = `You lost. ${compChoice} beats your ${userChoice}`;
-        msg.className = "red";
+        msg.innerText = `You lost! ${compChoice} beats your ${userChoice}`;
+        msg.className = "lose";
     }
 };
 
@@ -52,7 +52,7 @@ const playGame = (userChoice) => {
 
 choices.forEach((choice) => {
     choice.addEventListener("click", () => {
-        const userChoice = choice.getAttribute("id");
+        const userChoice = choice.id;
         playGame(userChoice);
     });
 });
