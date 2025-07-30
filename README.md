@@ -1,23 +1,34 @@
-🪨 Rock Paper Scissors Game – Web Project
-🎮 Overview
-This is a simple interactive Rock-Paper-Scissors game built using HTML, CSS, and JavaScript. It allows the player to play against the computer in a fun and responsive interface. The game logic is handled in JavaScript, and the UI is clean and user-friendly.
+# 🪨 Rock Paper Scissors Game – Web Project
 
+🎮 **Overview**  
+This is a simple and interactive Rock–Paper–Scissors game built using **HTML**, **CSS**, and **JavaScript**. It allows the player to play against the computer with real-time feedback in a clean, responsive interface. All game logic is written in JavaScript and styled using modern CSS techniques.
 
+🔗 **Live Demo:**  
+👉 [Play the Game](https://tic-tac-toe-wheat-zeta.vercel.app/)
 
-💡 Features
-Classic Rock–Paper–Scissors gameplay
+---
 
-Real-time result updates (Win/Lose/Draw)
+## 💡 Features
 
-Randomized computer choice
+- 🕹️ Classic Rock–Paper–Scissors gameplay
+- 🔄 Real-time result updates (Win / Lose / Draw)
+- 🎲 Randomized computer move
+- 💻 Clean and responsive UI
+- 🎨 Interactive buttons with visual feedback
 
-Clean and responsive design
+---
 
-Interactive buttons and visual feedback
+## 🛠️ Technologies Used
 
-🛠️ Technologies Used
-HTML5 – Structure of the game interface
+- **HTML5** – Structure of the game interface
+- **CSS3** – Styling and layout
+- **JavaScript (ES6)** – Game logic and user interactions
 
-CSS3 – Styling and layout
+---
 
-JavaScript – Game logic and user interaction
+## 🚀 How to Run Locally
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/rock-paper-scissors-game.git
+   cd rock-paper-scissors-game
